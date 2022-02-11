@@ -50,8 +50,11 @@ class RecipeTest {
 		setupStage2();
 		recipe.addIngredient("ajo", 21);
 		
-		//assert
+		Ingredient requerido = recipe.getIngredients().get(recipe.getIngredients().size()-2);
 		
+		//assert
+		assertEquals("ajo", requerido.getName());
+		assertEquals(79, requerido.getWeight());
 		
 		
 		
